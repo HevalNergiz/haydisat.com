@@ -1,0 +1,54 @@
+.mybutton {
+  background-color: rgba(66,214,202,0.2);
+  border-radius: 50px;
+  color: #37bc93;
+  position: relative;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.mybutton:hover {
+  background-color: rgba(66, 214, 202, 0.2);
+}
+
+.mybutton:focus {
+  outline: none;
+  opacity: 0.2;
+}
+
+.mybutton:hover:before {
+  content: " ";
+  border-radius: 100px;
+  border: 2px #42d6ca solid;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  transition: all 0.7s ease;
+  animation: grow 1s infinite;
+}
+
+.mybutton {
+  /*width: 150px;*/
+  /*height: 3rem;*/
+  box-sizing: border-box;
+  border: none;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding: 1rem 3rem;
+  margin-top: 0rem;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+

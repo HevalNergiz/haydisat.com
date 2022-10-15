@@ -1,0 +1,106 @@
+@keyframes rotatingg {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 4s linear infinite;
+  -moz-animation: rotating 4s linear infinite;
+  -ms-animation: rotating 4s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 4s linear infinite;
+}
+
+.rotating3 {
+  -webkit-animation: rotatingg 4s linear infinite;
+  -moz-animation: rotatingg 4s linear infinite;
+  -ms-animation: rotatingg 4s linear infinite;
+  -o-animation: rotatingg 2s linear infinite;
+  animation: rotatingg 4s linear infinite;
+}
+
+.gilroybold {
+  font-family: 'ClashDisplay-Variable';
+}
+
+a:hover {
+  cursor: none;
+}
+
+.navbar .nav-item:hover .nav-link, .navbar .nav-item.nav-link:hover {
+  color: #fff;
+}
+
+.circle {
+  z-index: 999999;
+}
+
+.greenbadgeforbigparagraph {
+  /*border-bottom: 4px solid #22955c;*/
+  /*padding-bottom: 5px;*/
+  font-family: 'ClashDisplay-Medium';
+  padding: 11px 20px;
+  background-color: #c2efd9;
+  border-radius: 2rem;
+  border-style: solid;
+  border-color: #22955c;
+  border-width: 1px;
+  color: #22955c;
+  white-space: nowrap;
+}
+
+.bigwords img {
+  width: 33%;
+}
+
+@media (min-width: 768px) {
+  .tepeheading {
+    font-size: calc(1.475rem + 2.7vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .tepeheading {
+    font-size: calc(1rem + 4.5vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobildegizle {
+    display: none;
+  }
+}
+
